@@ -33,7 +33,11 @@ neusum
         └── train
 ```
 
-The paper used CNN / Daily Mail dataset. [About the CNN Daily Mail Dataset](https://gist.github.com/magic282/e4b2ecc91f185939b2688863ae9e41c1)
+The paper used CNN / Daily Mail dataset.
+ 
+[About the CNN Daily Mail Dataset](https://gist.github.com/magic282/e4b2ecc91f185939b2688863ae9e41c1)
+
+[About the CNN Daily Mail Dataset 2](https://github.com/magic282/cnndm_acl18)
 ### Setup the environment
 #### Package Requirements:
 ```
