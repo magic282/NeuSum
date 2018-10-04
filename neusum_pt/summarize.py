@@ -76,7 +76,7 @@ def main():
     if opt.cuda:
         torch.cuda.set_device(opt.gpu)
 
-    translator = neusum.Translator(opt, logger=logger)
+    translator = neusum.Summarizer(opt, logger=logger)
 
     outF = open(opt.output, 'w', encoding='utf-8')
 
@@ -116,13 +116,10 @@ def main():
 
         for b in range(len(predBatch)):
             count += 1
-            # outF.write(" ".join(predBatch[b][0]) + '\n')
-            outF.write('{0}\t{1}'.format(predId[b][0], predBatch[b][0]) + '\n')
+            outF.write('{0}\t{1}'.format(predId[b], predBatch[b]) + '\n')
             outF.flush()
         srcBatch, tgtBatch = [], []
         src_raw, tgt_raw = [], []
-
-    reportScore('PRED', predScoreTotal, predWordsTotal)
 
     if tgtF:
         tgtF.close()
