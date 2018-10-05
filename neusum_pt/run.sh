@@ -52,6 +52,4 @@ python train.py -save_path ${SAVEPATH} \
                 -freeze_word_vecs_enc \
                 -dev_input_src ${DATAHOME}/dev/val.txt.src.shuffle.4k \
                 -dev_ref ${DATAHOME}/dev/val.txt.tgt.shuffle.4k \
-                -max_decode_step 3 -force_max_len \
-                -sent_encoder RNN -kernel 1 2 3 4 5 -channel 32 32 64 64 64
-
+                -max_decode_step 3 -force_max_len
